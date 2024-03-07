@@ -20,7 +20,7 @@ LINKER_FLAGS = $(foreach D, $(EXTERNAL_LIBRARY_DIRS), -L$(D)) -lmingw32 -lSDL2 -
 CFILES = $(foreach D, $(CODE_DIRS), $(wildcard $(D)/*.cpp))
 OFILES = $(patsubst %.cpp, %.o, $(CFILES))
 DFILES = $(patsubst %.cpp, %.d, $(CFILES))
-TARGET_BINARY = $(BUILD_DIR)/game_window
+TARGET_BINARY = $(BUILD_DIR)/snake_game
 
 all: $(TARGET_BINARY)
 
